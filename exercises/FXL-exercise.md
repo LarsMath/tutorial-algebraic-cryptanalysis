@@ -49,6 +49,8 @@ They are not meant to be ordered, so pick any you like.
 
 ### Exercise 4: Use sparse matrices instead
 
-### Exercise 5: Pre-process the Macaulay matrix
+### Exercise 5: Verify the rank predictions of random MQ systems by the Hilbert series using your XL implementation
 
-### Exercise 6: Generalize your algorithm to work for arbitrary degree input polynomials
+### Exercise 6: Pre-process the Macaulay matrix
+
+### Exercise 7: Generalize your algorithm to work for arbitrary degree input polynomials

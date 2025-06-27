@@ -1,6 +1,8 @@
-# tutorial-algebraic-cryptanalysis
+# Tutorial Algebraic Cryptanalysis
 
-
+This repo is made for the tutorial "Where did my RAM go? Using algebraic cryptanalysis in practice" in the Croatia summer school 2025.
+In this repo you can find the slides for the guiding presentations as well as the exercises that accompany the tutorial.
+This tutorial aims to give students a starting understanding of algebraic cryptanalysis, the common methods used therein, and how to estimate the complexity of such attacks.
 
 
 ## Installation

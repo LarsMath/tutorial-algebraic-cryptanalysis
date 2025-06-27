@@ -1,14 +1,19 @@
 # 3-TI Exercise
 
 In this exercise we will algebraically cryptanalyse 3-Tensor Isomorphism.
+
+## Problem statement
+
 The problem is, given two tensors, find a transformation between them:
 > Given $\mathcal{C}, \mathcal{D} \in \mathbb{F}_q^{n\times m \times k}$, find invertible matrices $(\mathbf{A}, \mathbf{B}, \mathbf{T}) \in GL_n \times GL_m \times GL_k$ such that:
 > $$ \sum_{i,j,l} \mathcal{C}_{ijk} \mathbf{A}_{ii'} \mathbf{B}_{jj'} \mathbf{T}_{ll'} = \mathcal{D}_{i'j'l'}$$
 
+## Implementing a solution
+
 In the notebook [3TI.ipynb](./3TI.ipynb) you can find a setup that generates a random 3-TI problem and a method for testing your solution.
 Try to solve the problem by designing the secret $(\mathbf{A}, \mathbf{B}, \mathbf{T})$ as solutions to a system of polynomial equations.
 Afterwards, you can either use your FXL algorithm or Sage's built-in [variety()](https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/multi_polynomial_ideal.html#sage.rings.polynomial.multi_polynomial_ideal.MPolynomialIdeal_singular_repr.variety).
-In case you use your own FXL implementation, the systems are likely not semi-regular, so play around with your $D, k$ parameters to see what works.
+In case you use your own FXL implementation, the systems are likely not semi-regular, so play around with your $D, k$ FXL parameters to see what works.
 
 Try to see how large you can get $n,m,k$ while still being able to break the problem.
 If you reach the limit of your model, try to see if you can alter your model for better results.
@@ -25,7 +30,7 @@ Answering these questions can guide you in designing an initial model and refini
 If you have an idea for a model, try it! 
 Implement it, test it, and see what happens.
 You can always revisit the questions later.
-We don’t expect you to tackle all of them (or even one) today, focus on what sparks your curiosity and build from there.
+We don’t expect you to tackle all of them today, focus on what sparks your curiosity and build from there.
 
 Algebraic cryptanalysis is an iterative process: alternating between thinking about the problem and experimenting with new models.
 There’s no such thing as a bad model. 
@@ -37,3 +42,4 @@ Even if it doesn’t perform well, it will help you build intuition that aid fut
 - What happens if apply $\mathbf{T}^{-1}$ to both sides of the equation? What happens to the amount of variables and equations? Also, what degree would these new equations be?
 - For these new equations, what is the degree of the $\mathbf{T}^{-1}$ variables in these equations? Can we somehow remove these variables?
 - Can we do the same trick for $\mathbf{A}^{-1}$ and $\mathbf{B}^{-1}$?
+- For each of your models, can you partition the variables so that your equations are bi-, tri-, or multi-homogeneous? How could this aid your algorithm?

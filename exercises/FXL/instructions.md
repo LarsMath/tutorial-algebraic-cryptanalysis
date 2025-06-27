@@ -5,7 +5,7 @@ If everything works as we hoped, then we will go on to implement the XL-variant 
 Finally, if time permits, and you are up to an additional challenge, there are some bonus exercises/optimizations to consider.
 
 ### Exercise 1: XL
-In the notebook `xl.ipynb` you can find the outline of an XL implementation.
+In the notebook [XL.ipynb](./XL.ipynb) you can find the outline of an XL implementation.
 Your task is to finish the missing functionality.
 Study all the cells in the notebook closely before implementing.
 You can use the slides to recap information.
@@ -18,12 +18,12 @@ Hint2: Sage has a lot of built-in functionality do not forget to check out the d
 #### Testing your implementation
 In the same notebook you can find a generator for random MQ instances. 
 Test your implementation for various $n, m, D$.
-With `operating-degree.ipynb` you can estimate the correct operating degree for different $n, m$.
+With [operating-degree.ipynb](./operating-degree.ipynb) you can estimate the correct operating degree for different $n, m$.
 What happens if you take $D \pm 1$?
 
 Instead of random systems we can also consider online challenges where the state-of-the-art algorithms compete to solve the largest instance.
 These can be found at [Fukuoka MQ challenge](https://www.mqchallenge.org/).
-You can use `fukuoka.ipynb` to transform the challenges into sage polynomials.
+You can use [fukuoka.ipynb](./fukuoka.ipynb) to transform the challenges into sage polynomials.
 
 ### Exercise 2: FXL
 Now that you have some experience with Sage and XL we can implement FXL:
@@ -38,7 +38,7 @@ Hint: You might want to change `assert K.dimension() == 1` from here on.
 Hint2: To insert your guessed variables you can use `f.subs()` or `R.hom()`. Take care that you do not augment the polynomials by guessed variables.
 
 #### Testing your implementation
-To test your algorithm, use `operating-degree.ipynb` with $n-k, m$ to compute the correct operating degree $D$ again.
+To test your algorithm, use [operating-degree.ipynb](./operating-degree.ipynb) with $n-k, m$ to compute the correct operating degree $D$ again.
 
 ## Additional exercises
 

@@ -10,12 +10,12 @@ and a special class of $m$-tuples of multivariate polynomials $\mathcal{C} \subs
 
 > **Question:** Find - if any - $\mathbf{S} \in \operatorname{GL}_n(\mathbb{F}_q)$, and $f = (f^{(1)} , \dots, f^{(m)} ) \in \mathcal{C}$ such that $p=f \circ \mathbf{S}$.
 
-Note that finding either one of $\mathbf{S}$ or $f$ is enough to recover the other part of the secret. This problem does not have a known polynomial time solution in general, and how hard it is depends on the structure of the special class $\mathcal{C}$. In MQ-Sign, we can describe this special class with the following two characteristics. 
+Note that finding either one of $\mathbf{S}$ or $f$ is enough to recover the other part of the secret. This problem does not have a known polynomial time solution in general, and how hard it is depends on the structure of the special class $\mathcal{C}$. When $\mathcal{C}$ describes a UOV central map, the best algorithms we have to solve this problem are all exponential. In MQ-Sign, we can describe this special class with the following two characteristics. 
 
 - $f$ is a UOV central map. The shape of this map can be described by splitting the variables into vinegar variables $(x_1, \ldots, x_v)$ and oil variables $(x_{v+1}, \ldots, x_{v+o})$ where $o=m=n-v$.
 Then the quadratic maps are given as
 $$
-    f^{(k)} = \sum_{\substack{1 \leq i \leq v \\ i \leq j \leq n}} \alpha^{(k)}_{ij} x_i x_j + \sum_i \beta^{(k)}_i x_i + \gamma^{(k)}.
+    f^{(k)} = \sum_{\substack{1 \leq i \leq v \\ i \leq j \leq n}} \alpha^{(k)}_{ij} x_i x_j %+ \sum_i \beta^{(k)}_i x_i + \gamma^{(k)}.
 $$
 - The central map can be written as $\mathcal{f}^{(k)}=\mathcal{f}_V^{(k)}+\mathcal{f}_{OV}^{(k)}$ where $\mathcal{f}_V^{(k)}=\sum_{i \in V, j \in V} \gamma_{ij}^{(k)} x_i x_j$ and $\mathcal{f}_{OV}^{(k)}=\sum_{i \in V, j \in O} \gamma_{ij}^{(k)} x_i x_j$. These can alternatively be referred to as the vinegar-vinegar quadratic part and the vinegar-oil quadratic part, and they are created as sparse systems, specifically with the following structure
 $$

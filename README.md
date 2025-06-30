@@ -7,8 +7,11 @@ This tutorial aims to give students a starting understanding of algebraic crypta
 
 ## Installation
 
-Follow the installation steps for Conda at [Miniforge](https://github.com/conda-forge/miniforge)
+In the exercises we will make use of Sage in jupyter notebooks.
+The most painless way to install sage is (in my opinion) through Conda.
+Conda is an open source package management system and has pre-compiled binaries for Sage.
 
+Follow the installation steps for Conda at [Miniforge](https://github.com/conda-forge/miniforge)
 
 Run the following command to create a virtual environment containing jupyter, sage and python.
 ```console
@@ -25,5 +28,9 @@ Now you can open jupyter lab to edit the code in the browser using
 jupyter lab
 ```
 and clicking the link in the terminal output.
-
 Alternatively you can link your favorite IDE to this python environment
+
+When you are done you can deactivate the environment using
+```
+conda deactivate
+```

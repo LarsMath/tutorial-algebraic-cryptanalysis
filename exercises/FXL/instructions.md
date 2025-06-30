@@ -32,6 +32,7 @@ FXL(R, fs, D, k)
 ```
 Use your existing XL implementation and extend it to do partial guessing.
 In this exercise there is no outline yet so think carefully what you will need.
+Good parameters to try would be $n=10, m=20, k=2, D=3.$
 
 Hint: You might want to change `assert K.dimension() == 1` from here on.
 

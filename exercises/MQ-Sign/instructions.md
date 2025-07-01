@@ -19,8 +19,8 @@ $$
 $$
 - The central map can be written as $\mathcal{f}^{(k)}=\mathcal{f}_V^{(k)}+\mathcal{f}_{OV}^{(k)}$ where $\mathcal{f}_V^{(k)}=\sum_{i \in V, j \in V} \gamma_{ij}^{(k)} x_i x_j$ and $\mathcal{f}_{OV}^{(k)}=\sum_{i \in V, j \in O} \gamma_{ij}^{(k)} x_i x_j$. These can alternatively be referred to as the vinegar-vinegar quadratic part and the vinegar-oil quadratic part, and they are created as sparse systems, specifically with the following structure
 $$
-\mathcal{f}_{V}^{(k)}=\sum_{i=1}^{v} \alpha_i^k x_i x_{(i+k-1 (\bmod { v}))+1} \\
-\mathcal{f}_{OV}^{(k)}=\sum_{i=1}^{v} \beta_i^k x_i x_{(i+k-2 (\bmod{m}))+v+1}.
+\mathcal{f}_{V}^{(k)}=\sum_{i=1}^{v} \alpha_i^{(k)} x_i x_{(i+k-1 (\bmod { v}))+1} \\
+\mathcal{f}_{OV}^{(k)}=\sum_{i=1}^{v} \beta_i^{(k)} x_i x_{(i+k-2 (\bmod{m}))+v+1}.
 $$
 
 Another piece of information we have about the problem statement is that this cryptosystem uses the UOV equivalent keys optimization, according to which the secret linear transformation $\mathbf{S}$ has the following form

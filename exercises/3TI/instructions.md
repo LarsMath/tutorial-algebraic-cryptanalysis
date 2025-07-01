@@ -39,7 +39,7 @@ Even if it doesn’t perform well, it will help you build intuition that aid fut
 - Look at the problem statement, what are the unknowns. Can we model these as variables in a polynomial system?
 - What degree do the equations have? What degree do we like them to have?
 - If $(\mathbf{A}, \mathbf{B}, \mathbf{T})$ is a solution, then $(\lambda \mathbf{A}, \mu \mathbf{B}, \lambda^{-1}\mu^{-1}\mathbf{T})$ is a solution as well for $\lambda, \mu \in \mathbb{F}_q^*$. Can we use this to our advantage?
-- What happens if apply $\mathbf{T}^{-1}$ to both sides of the equation? What happens to the amount of variables and equations? Also, what degree would these new equations be?
+- What happens if we apply $\mathbf{T}^{-1}$ to both sides of the equation? What happens to the amount of variables and equations? Also, what degree would these new equations be?
 - For these new equations, what is the degree of the $\mathbf{T}^{-1}$ variables in these equations? Can we somehow remove these variables?
 - Can we do the same trick for $\mathbf{A}^{-1}$ and $\mathbf{B}^{-1}$?
 - For each of your models, can you partition the variables so that your equations are bi-, tri-, or multi-homogeneous? How could this aid your algorithm?

@@ -11,7 +11,7 @@ $$
     (s_{94},\dots,s_{177}) \leftarrow (IV_1,\dots,IV_{80},0,\dots,0) \\
     (s_{178},\dots,s_{288}) \leftarrow (0,\dots,0,1,1,1). 
 $$
-At the end of each round, all registers are shifted by one bit and the first bit in each register is updated using the defined non-linear feedback function. The initialization process of Trivium consists in loading the state bits into the registers and performing 1152 rounds without producing an output. After this process, every next round produces one output bit obtained as a linear combination of six state bits. The iterative process of Trivium is shown in the algorithm below, where $Z$ denotes the number of generated keystream bits. The pseudo-code for the initialization process is similar, with the exception that line $z_{i} \leftarrow t_{1}+t_{2}+t_{3}$ is missing and $i$ goes from 1 to 1155.
+At the end of each round, all registers are shifted by one bit and the first bit in each register is updated using the defined non-linear feedback function. The initialization process of Trivium consists in loading the state bits into the registers and performing 1155 rounds without producing an output. After this process, every next round produces one output bit obtained as a linear combination of six state bits. The iterative process of Trivium is shown in the algorithm below, where $Z$ denotes the number of generated keystream bits. The pseudo-code for the initialization process is similar, with the exception that line $z_{i} \leftarrow t_{1}+t_{2}+t_{3}$ is missing and $i$ goes from 1 to 1155.
 
 ### Trivium's iterative function for keystream generation.
 		
